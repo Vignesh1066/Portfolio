@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    html {
+      font-family: "Roboto", sans-serif ;
+    }
+  }
+
+  @keyframes spreadFromCenter {
+    0% {
+      clip-path: circle(0% at 50% 50%);
+    }
+    100% {
+      clip-path: circle(150% at 50% 50%);
+    }
+  }
+  
+  .group-hover .clip-circle {
+    animation: spreadFromCenter 0.5s ease-out forwards;
+  }
+  
+  
