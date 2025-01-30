@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaGithub, FaBootstrap } from 'react-icons/fa';
 import { SiExpress, SiTailwindcss, SiMongodb, SiMysql } from 'react-icons/si';
 import { DiHtml5, DiCss3 } from 'react-icons/di';
 
@@ -10,6 +10,7 @@ const TechExperience = () => {
     { icon: <SiExpress />, name: 'Express.js' },
     { icon: <DiHtml5 />, name: 'HTML' },
     { icon: <DiCss3 />, name: 'CSS' },
+    { icon: <FaBootstrap />, name: 'Bootstrap' },
     { icon: <SiTailwindcss />, name: 'Tailwind CSS' },
     { icon: <SiMongodb />, name: 'MongoDB' },
     { icon: <SiMysql />, name: 'MySQL' },

@@ -1,6 +1,6 @@
 import React from "react";
 import WhyGlobalLogo from "../assets/WhyGlobalLogo.webp"
-
+import CodoidLogo from "../assets/codoidLogo.svg"
 
 const WorkExperience = () => {
   const experiences = [
@@ -8,7 +8,7 @@ const WorkExperience = () => {
       role: "Software Testing Intern",
       company: "Codoid Innovation Pvt Ltd",
       date: "Sep 2023 - Feb 2024",
-      logo: WhyGlobalLogo,
+      logo: CodoidLogo,
       details: [
         "Performed both manual and automated testing to ensure the quality and reliability of software applications.",
         "Designed and executed test cases, scripts, and scenarios for functional, regression, and performance testing.",
@@ -54,7 +54,7 @@ const WorkExperience = () => {
                 <img
                   src={experience.logo}
                   alt={`${experience.company} logo`}
-                  className="w-36 h-12 rounded bg-gray-700 p-1"
+                  className="w-36 h-12 rounded bg-gray-100 p-1"
                 />
                 <div>
                   <h3 className="text-xl font-semibold text-teal-400">
