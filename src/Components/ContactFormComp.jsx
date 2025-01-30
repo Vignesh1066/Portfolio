@@ -4,6 +4,8 @@ import { SiMongodb, SiExpress, SiTailwindcss, SiJavascript } from "react-icons/s
 import axios from "axios";
 import { toast } from "react-toastify";
 
+const apikey=import.meta.env.VITE_ACCESS_KEY;
+
 const ContactSection = () => {
   const nameRef = useRef();
   const emailRef = useRef();
@@ -12,7 +14,7 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = {
-      access_key: "4a5b6128-a64d-4a14-b0bd-e01616a085ef",
+      access_key: apikey,
       name: nameRef.current.value,
       email: emailRef.current.value,
       message: messageRef.current.value,
@@ -44,6 +46,7 @@ const ContactSection = () => {
 
         <div className="lg:w-1/2 w-full flex items-stretch">
           <form onSubmit={handleSubmit} className="bg-gray-900 p-6 rounded-lg shadow-lg w-full flex flex-col">
+            <input type="hidden" name="access_key" value={import.meta.env.VITE_ACCESS_KEY}/>
             <h2 className="text-3xl font-semibold text-center mb-6 text-emerald-400">Contact Form</h2>
             <div className="mb-4">
               <label className="block text-sm font-medium mb-1">Your Name</label>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { AiOutlineMenu } from "react-icons/ai"; // Importing the burger menu icon from React Icons
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,13 +21,12 @@ const Navbar = () => {
 
   return (
     <nav className="w-full min-h-20 flex justify-between items-center bg-gray-900 gap-8 fixed top-0 z-30 px-6 py-4">
-      {/* Logo on the Left as Image */}
       <div className="text-white font-bold text-xl">
         <Link to="/">
           <img
-            src="/path/to/your/logo.png" // Replace with the path to your logo image
+            src="/path/to/your/logo.png" 
             alt="Logo"
-            className="w-12 h-12" // Adjust the size of the logo as needed
+            className="w-12 h-12"
           />
         </Link>
       </div>
@@ -47,7 +46,7 @@ const Navbar = () => {
           <a
             key={index}
             href={value.path}
-            onClick={() => setIsMenuOpen(false)} // Close menu on item click
+            onClick={() => setIsMenuOpen(false)} 
             className={`px-3 py-1.5  ${
               value.path === location.pathname
                 ? "border-solid border-b-[3px] rounded-b-none border-teal-500"
