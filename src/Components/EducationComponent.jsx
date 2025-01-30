@@ -20,9 +20,9 @@ const EducationSection = () => {
   ];
 
   return (
-    <section id="education" className="bg-gradient-to-t from-gray-800  to-gray-900 text-white py-16 px-6">
+    <section id="education" className="bg-gradient-to-t from-gray-800  to-gray-900 text-white pt-5 pb-10 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold text-center text-teal-400 mb-12">
+        <h2 className="text-4xl sm:text-5xl font-semibold text-center text-teal-400 mb-12">
         Academic Excellence
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">

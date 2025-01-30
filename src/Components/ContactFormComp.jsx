@@ -1,15 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaBootstrap } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiTailwindcss, SiJavascript } from "react-icons/si";
 import axios from "axios";
-import { toast } from "react-toastify";
 
-const apikey=import.meta.env.VITE_ACCESS_KEY;
+const apikey = import.meta.env.VITE_ACCESS_KEY;
 
 const ContactSection = () => {
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
+  const [feedbackMessage, setFeedbackMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,13 +23,13 @@ const ContactSection = () => {
     try {
       const response = await axios.post("https://api.web3forms.com/submit", formData);
       if (response.data.success) {
-        toast.success("Message sent successfully!")
+        setFeedbackMessage("Message sent successfully!");
       } else {
-        toast.error("Message sending failed. Please try again.")
+        setFeedbackMessage("Message sending failed. Please try again.");
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      toast.error("An error occurred. Please try again later.")
+      setFeedbackMessage("An error occurred. Please try again later.");
     }
 
     nameRef.current.value = "";
@@ -40,13 +40,12 @@ const ContactSection = () => {
   return (
     <div id="contact" className="py-16 flex flex-col items-center justify-center bg-gradient-to-b from-gray-800  to-gray-900 -mt-10 text-white">
       <div className="w-full text-center max-sm:mt-10">
-        <h1 className="text-4xl sm:text-5xl font-bold text-teal-400">Reach Me Anytime</h1>
+        <h1 className="text-4xl sm:text-5xl font-semibold text-teal-400">Reach Me Anytime</h1>
       </div>
       <div className="max-w-7xl mt-10 w-full flex flex-col lg:flex-row items-stretch justify-between gap-10 p-6">
-
         <div className="lg:w-1/2 w-full flex items-stretch">
           <form onSubmit={handleSubmit} className="bg-gray-900 p-6 rounded-lg shadow-lg w-full flex flex-col">
-            <input type="hidden" name="access_key" value={import.meta.env.VITE_ACCESS_KEY}/>
+            <input type="hidden" name="access_key" value={import.meta.env.VITE_ACCESS_KEY} />
             <h2 className="text-3xl font-semibold text-center mb-6 text-emerald-400">Contact Form</h2>
             <div className="mb-4">
               <label className="block text-sm font-medium mb-1">Your Name</label>
@@ -78,6 +77,11 @@ const ContactSection = () => {
                 required
               ></textarea>
             </div>
+            {feedbackMessage && (
+              <div className={`mb-4 text-center ${feedbackMessage.includes('success') ? 'text-green-400' : 'text-red-400'}`}>
+                <p>{feedbackMessage}</p>
+              </div>
+            )}
             <button
               type="submit"
               className="w-full py-2 bg-gradient-to-r from-teal-500 to-emerald-500 hover:bg-gradient-to-l transition-all duration-700 text-white font-bold rounded"
@@ -96,10 +100,10 @@ const ContactSection = () => {
             </div>
 
             <div className="absolute w-full h-full">
-              <div className="absolute left-10 top-5 animate-spin-slow">
+              <div className="absolute sm:left-10 left-5 top-5 animate-spin-slow">
                 <SiJavascript className="text-5xl text-yellow-500" />
               </div>
-              <div className="absolute right-10 top-5 animate-spin-slow">
+              <div className="absolute sm:right-10 right-5 top-5 animate-spin-slow">
                 <FaNodeJs className="text-5xl text-green-500" />
               </div>
               <div className="absolute left-5 bottom-10 animate-spin-slow">
@@ -114,7 +118,7 @@ const ContactSection = () => {
               <div className="absolute top-1/2 left-10 sm:left-20  transform -translate-x-16 -translate-y-1/2 animate-spin-slow">
                 <SiTailwindcss className="text-5xl text-cyan-500" />
               </div>
-              <div className="absolute top-1/2 right-2 sm:right-10 animate-spin-slow">
+              <div className="absolute top-1/2 right-1 sm:right-10 animate-spin-slow">
                 <FaBootstrap className="text-5xl text-purple-500" />
               </div>
               <div className="absolute top-10 left-1/2 transform -translate-x-1/2 animate-spin-slow">

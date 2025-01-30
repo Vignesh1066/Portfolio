@@ -63,7 +63,7 @@ const Navbar = () => {
               href={value.path}
               className={`px-3 py-1.5 ${
                 activeSection === value.path
-                  ? "border-b-[3px] border-teal-500 text-white"
+                  ? "border-b-[3px] border-teal-500 rounded-none text-white"
                   : "hover:border-b-[3px] border-teal-500 hover:bg-gradient-to-r from-emerald-500 to-teal-500 hover:text-white"
               } rounded text-white font-medium`}
             >

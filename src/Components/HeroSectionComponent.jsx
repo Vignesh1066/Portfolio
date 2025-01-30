@@ -18,7 +18,7 @@ const HeroSectionComponent = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <div className="absolute z-10 left-4 sm:left-10 flex flex-col justify-center items-start px-6 gap-4">
-        <h1 className="text-4xl sm:text-[75px] font-semibold bg-gradient-to-r from-teal-400 via-emerald-500 to-green-400 text-transparent bg-clip-text leading-tight">
+        <h1 className="text-4xl sm:text-[75px] font-medium bg-gradient-to-r from-teal-400 via-emerald-500 to-green-400 text-transparent bg-clip-text leading-tight">
           {name}
         </h1>
         <h4 className="font-medium text-lg sm:text-[24px] opacity-90">

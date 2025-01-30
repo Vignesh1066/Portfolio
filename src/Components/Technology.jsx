@@ -5,9 +5,9 @@ import { DiHtml5, DiCss3 } from 'react-icons/di';
 
 const TechExperience = () => {
   const techIcons = [
-    { icon: <FaReact/>, name: 'React' },
+    { icon: <FaReact/>, name: 'React.js' },
     { icon: <FaNodeJs />, name: 'Node.js' },
-    { icon: <SiExpress />, name: 'Express' },
+    { icon: <SiExpress />, name: 'Express.js' },
     { icon: <DiHtml5 />, name: 'HTML' },
     { icon: <DiCss3 />, name: 'CSS' },
     { icon: <SiTailwindcss />, name: 'Tailwind CSS' },

@@ -11,6 +11,8 @@ import {
 import { Link } from "react-router-dom";
 import ecommerce from "../assets/bike.jpg";
 import doctor from "../assets/doctorbooking.jpg";
+import portfolio from "../assets/PortfolioProject.jpg";
+import audi from "../assets/AudiProject.jpg";
 import moviebooking from "../assets/moviebooking2.jpg";
 
 function CardsComponent({ data }) {
@@ -74,7 +76,7 @@ function CardsComponent({ data }) {
         }}
       >
         <Typography
-          align="center"
+          align="left"
           variant="h5"
           component="h1"
           sx={{
@@ -105,19 +107,31 @@ function CardsGrid() {
       projectId: 1,
       projectName: "E-Commerce for Bike Spares",
       projectimage: ecommerce,
-      buttonPath: "/project1",
+      buttonPath: "https://github.com/orgs/FSD-E-Commerce/repositories",
     },
     {
       projectId: 2,
       projectName: "Movie Ticket Booking",
       projectimage: moviebooking,
-      buttonPath: "/project2",
+      buttonPath: "https://github.com/orgs/PopcornSpot/repositories",
     },
     {
       projectId: 3,
       projectName: "Doctor Appointment Booking",
       projectimage: doctor,
-      buttonPath: "/project3",
+      buttonPath: "https://github.com/Vignesh1066",
+    },
+    {
+      projectId: 4,
+      projectName: "Responsive Design Portfolio",
+      projectimage: portfolio,
+      buttonPath: "https://github.com/Vignesh1066/Portfolio/tree/Front-End",
+    },
+    {
+      projectId: 5,
+      projectName: "Audi Performance Edge ",
+      projectimage: audi,
+      buttonPath: "https://github.com/Vignesh1066/Audi/tree/Front-End",
     },
   ];
 
