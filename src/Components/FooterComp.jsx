@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import logo from "../assets/portfolioLogo.png"
 
 function Footer() {
   return (
@@ -8,9 +9,9 @@ function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
           <div className="flex items-center mb-4 sm:mb-0">
             <img
-              src="/logo.png"
+              src={logo}
               alt="Logo"
-              className="w-12 h-12 mr-4"
+              className="w-16 h-12 mr-4"
             />
           </div>
 

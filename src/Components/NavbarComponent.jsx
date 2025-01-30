@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import logo from "../assets/portfolioLogo.png"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,7 +49,7 @@ const Navbar = () => {
       <nav className="w-full min-h-20 flex justify-between items-center bg-gray-900 fixed top-0 z-40 px-6 py-4">
         <div className="text-white font-bold text-xl">
           <a href="#home">
-            <img src="/path/to/your/logo.png" alt="Logo" className="w-12 h-12" />
+            <img src={logo} alt="Logo" className="w-16 h-12" />
           </a>
         </div>
 
@@ -87,7 +88,7 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center px-6 py-4 border-b border-gray-700">
           <a href="#home">
-            <img src="/path/to/your/logo.png" alt="Logo" className="w-10 h-10" />
+            <img src={logo} alt="Logo" className="w-16 h-12" />
           </a>
           <button className="text-white" onClick={toggleMenu}>
             <AiOutlineClose className="w-6 h-6" />
