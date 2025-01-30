@@ -88,7 +88,7 @@ const ContactSection = () => {
         </div>
 
         <div
-          className="lg:w-1/2 w-full h-[500px] md:min-h-full bg-gray-900 p-6 rounded-lg shadow-lg flex items-center justify-center"
+          className="lg:w-1/2 w-full sm:h-[500px] h-[400px] md:min-h-full bg-gray-900 p-6 rounded-lg shadow-lg flex items-center justify-center"
         >
           <div className="relative w-full h-full flex items-center justify-center">
             <div className="absolute p-5 bg-gray-700 rounded-full animate-spin-slow">
@@ -111,10 +111,10 @@ const ContactSection = () => {
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-spin-slow">
                 <FaHtml5 className="text-5xl text-orange-500" />
               </div>
-              <div className="absolute top-1/2 left-20 transform -translate-x-16 -translate-y-1/2 animate-spin-slow">
+              <div className="absolute top-1/2 left-10 sm:left-20  transform -translate-x-16 -translate-y-1/2 animate-spin-slow">
                 <SiTailwindcss className="text-5xl text-cyan-500" />
               </div>
-              <div className="absolute top-1/2 right-10 animate-spin-slow">
+              <div className="absolute top-1/2 right-2 sm:right-10 animate-spin-slow">
                 <FaBootstrap className="text-5xl text-purple-500" />
               </div>
               <div className="absolute top-10 left-1/2 transform -translate-x-1/2 animate-spin-slow">

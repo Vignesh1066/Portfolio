@@ -34,7 +34,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <section className="w-full min-h-screen bg-gradient-to-b from-gray-800  to-gray-900 text-white px-8 py-10">
+    <section id="experience" className="w-full min-h-screen bg-gradient-to-b from-gray-800  to-gray-900 text-white px-8 py-10">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-5xl font-bold text-center mb-12">
           What I Have Done So Far

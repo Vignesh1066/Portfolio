@@ -1,9 +1,17 @@
 import React from "react";
-import { Card, CardMedia, CardContent, Typography, Box, Grid, Container } from "@mui/material";
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+  Box,
+  Grid,
+  Container,
+} from "@mui/material";
 import { Link } from "react-router-dom";
-import ecommerce from "../assets/bike.jpg"
-import doctor from "../assets/doctorbooking.jpg"
-import moviebooking from "../assets/moviebooking2.jpg"
+import ecommerce from "../assets/bike.jpg";
+import doctor from "../assets/doctorbooking.jpg";
+import moviebooking from "../assets/moviebooking2.jpg";
 
 function CardsComponent({ data }) {
   const { projectName, buttonPath, projectimage } = data;
@@ -49,18 +57,18 @@ function CardsComponent({ data }) {
           inset: 0,
           backgroundColor: "rgba(244,240,236, 0.6)",
           transform: "translateY(100%)",
-          transition: "transform 0.5s ease-in-out, background-color 0.3s ease-in-out",
+          transition:
+            "transform 0.5s ease-in-out, background-color 0.3s ease-in-out",
           zIndex: 1,
         }}
       ></Box>
       <CardContent
-      
         className="content"
         sx={{
           position: "absolute",
           bottom: "2.5rem",
           zIndex: 2,
-          left:"0.5rem",
+          left: "0.5rem",
           opacity: 0,
           transition: "opacity 0.5s ease-out",
         }}
@@ -84,7 +92,7 @@ function CardsComponent({ data }) {
             color: "#0d9488",
           }}
         >
-         Web Application
+          Web Application
         </Typography>
       </CardContent>
     </Card>
@@ -96,29 +104,30 @@ function CardsGrid() {
     {
       projectId: 1,
       projectName: "E-Commerce for Bike Spares",
-      projectimage:ecommerce,
+      projectimage: ecommerce,
       buttonPath: "/project1",
     },
     {
       projectId: 2,
       projectName: "Movie Ticket Booking",
-      projectimage:moviebooking,
+      projectimage: moviebooking,
       buttonPath: "/project2",
     },
     {
       projectId: 3,
       projectName: "Doctor Appointment Booking",
-      projectimage:doctor,
+      projectimage: doctor,
       buttonPath: "/project3",
     },
   ];
 
   return (
     <Container
+      id="project"
       sx={{
         py: 5,
-        pb:10,
-        background: "#1f2937",  
+        pb: 10,
+        background: "#1f2937",
         width: "100%",
       }}
       maxWidth={false}

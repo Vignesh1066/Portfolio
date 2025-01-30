@@ -2,12 +2,12 @@ import React from "react";
 
 const JourneySection = () => {
   return (
-    <section className="w-full bg-gradient-to-b from-gray-800  to-gray-900 text-white px-8 py-16">
+    <section id="about" className="w-full bg-gradient-to-b from-gray-800  to-gray-900 text-white px-8 py-16">
       <div className="w-full max-w-screen-xl mx-auto text-left">
-        <h2 className="text-4xl sm:text-5xl text-center text-teal-400 font-bold mb-2">
+        <h2 className="text-4xl sm:text-5xl text-center text-teal-400 font-bold sm:mb-2 mb-5">
           Welcome to the Journey
         </h2>
-        <h3 className="text-xl sm:text-2xl font-medium text-gray-300 mb-5">
+        <h3 className="text-xl sm:text-2xl font-medium text-gray-300 mb-1 sm:mb-2">
           Explore the Overview
         </h3>
         <p className="text-lg sm:text-xl leading-relaxed text-justify">
