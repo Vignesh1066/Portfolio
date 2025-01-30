@@ -45,7 +45,7 @@ const WorkExperience = () => {
           {experiences.map((experience, index) => (
             <div key={index} className="mb-16 relative" 
             >
-              <div className="absolute -left-12 top-0 w-8 h-8 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full flex items-center justify-center">
+              <div className="absolute -left-[48px] -top-2 w-8 h-8 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full flex items-center justify-center">
                 <span className="w-4 h-4 bg-gray-900 rounded-full"></span>
               </div>
               <p className="text-sm text-gray-400 mb-2">{experience.date}</p>
