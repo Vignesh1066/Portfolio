@@ -2,8 +2,6 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Navbar } from "../Components/NavbarComponent";
 import Footer from "../Components/FooterComp";
-// import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
-
 import WorkExperience from "../Components/WorkExperienceComp";
 import TechExperience from "../Components/Technology";
 import JourneySection from "../Components/JourneyComponent";

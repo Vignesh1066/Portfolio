@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import heroSectionImage from "../assets/herosectionImage.jpg"
+import resumePDF from "../assets/Vigneshwaran S-8344024735-FSD.pdf";
 
 const HeroSectionComponent = () => {
   const name = "Hi, I'm Vigneshwaran";
@@ -9,7 +9,7 @@ const HeroSectionComponent = () => {
 
   return (
     <section
-    id="home"
+      id="home"
       className="w-full h-[700px] flex text-white justify-center items-center relative bg-opacity-50 bg-cover bg-center"
       style={{
         backgroundImage: `url(${heroSectionImage})`,
@@ -27,11 +27,11 @@ const HeroSectionComponent = () => {
         <p className="text-sm sm:text-base text-gray-300 max-w-[400px] mt-0 sm:mt-1 leading-relaxed">
           I'm passionate about creating scalable, intuitive web applications and interactive user interfaces. Let's build something amazing together.
         </p>
-        <Link to={"cv"}>
+        <a href={resumePDF} download="Vigneshwaran_Resume.pdf">
           <button className="py-2 px-6 bg-gradient-to-r from-teal-400 to-emerald-500 rounded-lg font-semibold text-white hover:bg-gradient-to-l transition-all duration-300 mt-4">
             Download CV
           </button>
-        </Link>
+        </a>
       </div>
 
       <div className="hidden sm:flex absolute right-4 sm:right-10 px-4 sm:px-6 flex-col gap-4 sm:gap-5">
