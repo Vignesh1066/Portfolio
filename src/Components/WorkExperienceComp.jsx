@@ -22,7 +22,7 @@ const WorkExperience = () => {
     {
       role: "Full-Stack Web Developer Intern",
       company: "Why Global Services",
-      date: "January 2024 - Present",
+      date: "July 2024 - Present",
       logo: WhyGlobalLogo,
       details: [
         "Developed dynamic and responsive web applications using modern frameworks and libraries.",
