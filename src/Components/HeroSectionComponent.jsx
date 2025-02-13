@@ -45,7 +45,7 @@ const HeroSectionComponent = () => {
         </a>
 
         <a
-          href="https://github.com"
+          href="https://github.com/Vignesh1066"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-12 h-12 sm:w-[60px] sm:h-[60px] bg-white rounded-full hover:bg-teal-400 transition"
@@ -54,7 +54,7 @@ const HeroSectionComponent = () => {
         </a>
 
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/vigneshwaran-s-129856238"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-12 h-12 sm:w-[60px] sm:h-[60px] bg-white rounded-full hover:bg-teal-400 transition"

@@ -107,7 +107,7 @@ function CardsGrid() {
       projectId: 1,
       projectName: "E-Commerce for Bike Spares",
       projectimage: ecommerce,
-      buttonPath: "https://github.com/orgs/FSD-E-Commerce/repositories",
+      buttonPath: "https://github.com/orgs/E-Commerce-BikeSpares/repositories",
     },
     {
       projectId: 2,
