@@ -119,7 +119,7 @@ function CardsGrid() {
       projectId: 3,
       projectName: "Doctor Appointment Booking",
       projectimage: doctor,
-      buttonPath: "https://github.com/Vignesh1066",
+      buttonPath: "https://github.com/orgs/online-consultation-project/repositories",
     },
     {
       projectId: 4,
